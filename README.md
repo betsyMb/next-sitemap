@@ -529,3 +529,4 @@ module.exports = {
 ## Contribution
 
 All PRs are welcome :)
+# next-sitemap
