@@ -262,9 +262,9 @@ export class SitemapBuilder {
         video.duration && `<video:duration>${video.duration}</video:duration>`,
         video.viewCount &&
           `<video:view_count>${video.viewCount}</video:view_count>`,
-        video.tag.length > 0 && video.tag.map(tag => `<video:tag>${this.escapeHtml(tag)}</video:tag>`),
+        video?.tag && video?.tag.length > 0 && video?.tag?.map(tag => `<video:tag>${this.escapeHtml(tag)}</video:tag>`),
         video.cgallery_loc &&  `<video:cgallery_loc title={video.cgallery_loc.title}>${video.cgallery_loc.value}</video:cgallery_loc>`,
-        video.upload_date && `<video:upload_date title={video.upload_date}>${video.cgallery_loc.value}</video:upload_date>`,
+        video.upload_date && `<video:upload_date>${video.upload_date}</video:upload_date>`,
         video.rating &&
           `<video:rating>${video.rating
             .toFixed(1)

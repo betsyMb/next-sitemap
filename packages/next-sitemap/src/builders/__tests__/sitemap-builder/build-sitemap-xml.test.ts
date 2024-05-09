@@ -139,7 +139,7 @@ describe('SitemapBuilder', () => {
               relationship: 'deny',
               content: 'CZ',
             },
-            tag: 'video',
+            tag: ['video'],
             uploader: {
               name: 'John Doe',
               info: new URL('https://example.com'),

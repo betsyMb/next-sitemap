@@ -287,7 +287,7 @@ export type IVideoEntry = {
   tag?: string[]
   category?: string
   cgallery_loc?: {value: string, title: string }
-  upload_date: string
+  upload_date?: string
 }
 
 export type ISitemapField = {
