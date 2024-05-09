@@ -284,7 +284,10 @@ export type IVideoEntry = {
     info?: URL
   }
   live?: boolean
-  tag?: string
+  tag?: string[]
+  category?: string
+  cgallery_loc?: {value: string, title: string }
+  upload_date: string
 }
 
 export type ISitemapField = {
